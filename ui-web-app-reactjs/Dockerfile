@@ -10,6 +10,9 @@ COPY . .
 RUN npm install express
 RUN npm install
 
+#To fix vulnerabilities 
+RUN npm audit fix
+
 #Application will run on 8080 port so expose that port 
 EXPOSE 8080
 
