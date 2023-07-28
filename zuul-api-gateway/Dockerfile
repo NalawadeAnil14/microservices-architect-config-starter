@@ -1,5 +1,5 @@
 FROM maven as build
-MAINTAINER sarat.e99@gmail.com Sarat Chandra E
+MAINTAINER Anil Nalawade
 
 
 WORKDIR /app
