@@ -5,9 +5,8 @@ pipeline {
     {
       steps {
         script {
-      //    def workspace = WORKSPACE  
-      //    echo 'WORKSPACE'
-           sh 'printenv.WORKSPACE'  
+           sh 'docker built -t ui-image ./ui-web-app-reactjs' 
+           sh 'docker images'  
         }
       }   
     }
