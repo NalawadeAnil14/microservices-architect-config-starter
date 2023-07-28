@@ -7,11 +7,11 @@ WORKDIR /app
 #Copy files from your current location to /app on container directory
 COPY . .
 
+#To fix vulnerabilities
+RUN npm audit fix
+
 RUN npm install express
 RUN npm install
-
-#To fix vulnerabilities 
-RUN npm audit fix
 
 #Application will run on 8080 port so expose that port 
 EXPOSE 8080
