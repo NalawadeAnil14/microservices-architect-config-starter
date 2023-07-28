@@ -5,7 +5,7 @@ pipeline {
     {
       steps {
         script {
-           sh 'docker built -t ui-image ./ui-web-app-reactjs' 
+           sh 'docker build -t ui-image ./ui-web-app-reactjs' 
            sh 'docker images'  
         }
       }   
