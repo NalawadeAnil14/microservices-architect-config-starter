@@ -7,7 +7,7 @@ pipeline {
         script {
       //    def workspace = WORKSPACE  
       //    echo 'WORKSPACE'
-           sh 'printenv'  
+           sh 'printenv.WORKSPACE'  
         }
       }   
     }
