@@ -6,7 +6,8 @@ pipeline {
       steps {
         script {
       //    def workspace = WORKSPACE  
-          echo '${env.WORKSPACE}'
+      //    echo 'WORKSPACE'
+           sh 'printenv'  
         }
       }   
     }
